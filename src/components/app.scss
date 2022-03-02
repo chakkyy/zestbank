@@ -1,0 +1,12 @@
+.Zest {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .trapeze {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}

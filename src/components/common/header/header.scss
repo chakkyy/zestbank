@@ -1,0 +1,56 @@
+$main: #04004D;
+$main-hover: #0800a7;
+$main-active: #040038;
+
+header {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 120px;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  animation: 0.5s fadeInMenu;
+  animation-fill-mode: forwards;
+
+  .section-left {
+    width: 20%;
+    margin: 0 6%;
+
+    img { width: 70px; }
+  }
+
+  .section-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    margin: 0 6%;
+    font-size: 14px;
+
+    .menu-item {
+      cursor: pointer;
+      margin-right: 10%;
+      transition: 1s all ease;
+
+      &:hover { color: $main-hover; }
+      &:active { 
+        color: $main-active;
+        transition: none;
+      }
+    }
+  }
+}
+
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    top: -5%
+  }
+  to {
+    opacity: 1;
+    top: 0%
+  }
+}

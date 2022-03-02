@@ -1,0 +1,29 @@
+@media screen and (max-width: 728px) {
+  .try-for-free {
+    width: 80%;
+    height: 100%;
+    margin-top: 10vh;
+    padding: 20% 10%;
+
+    .conclusion {
+      padding: 30px 0;
+    }
+
+    .links-to-stores {
+      flex-direction: column;
+
+      .btn-store:first-child {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+    }
+
+    .background-circle-bottom, .background-circle-top {
+      display: none;
+    }
+
+    .green-dot-bottom, .green-dot-right {
+      display: none;
+    }
+  }
+}
